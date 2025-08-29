@@ -48,7 +48,7 @@ app.post("/bfhl", (req, res) => {
 
     res.status(200).json({
       is_success: true,
-      user_id: ${FULL_NAME.toLowerCase()}_${DOB},
+      user_id: `${FULL_NAME.toLowerCase()}_${DOB}`,
       email: EMAIL,
       roll_number: ROLL_NUMBER,
       odd_numbers: oddNumbers,
@@ -71,4 +71,4 @@ app.get("/", (req, res) => {
 });
 
 const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => console.log(Server running on port ${PORT}));
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
