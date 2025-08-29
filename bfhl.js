@@ -4,10 +4,10 @@ const bodyParser = require("body-parser");
 const app = express();
 app.use(bodyParser.json());
 
-const FULL_NAME = "pranav_deshmukh";
-const DOB = "15102004";
-const EMAIL = "pranavdeshmukh190@gmail.com";
-const ROLL_NUMBER = "22BCE3207";
+const FULL_NAME = "aditya_ayan_singh";
+const DOB = "10062003";
+const EMAIL = "adityaayan.singh2026@gmail.com";
+const ROLL_NUMBER = "22BCE3372";
 
 app.post("/bfhl", (req, res) => {
   try {
